@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Read a Sample — EMMA: Déjà Vécu | Déjà Vécu Publishing</title>
+<meta name="description" content="Read the opening pages of EMMA: Déjà Vécu, a psychological suspense novel by Joshua P. Rogers." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b0d12;
+    --slate:#12151d;
+    --slate-line:#23283380;
+    --paper:#ece6d8;
+    --paper-dim:#ece6d8b3;
+    --gold:#c6a15b;
+    --gold-dim:#8a7038;
+    --fog:#8a8d97;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', -apple-system, sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+    --max: 1120px;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+  a{ color:inherit; }
+  ::selection{ background:var(--gold); color:var(--ink); }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 28px; }
+
+  header.site{
+    position:sticky; top:0; z-index:10;
+    background:var(--ink)ee; backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--slate-line);
+    padding:22px 0;
+  }
+  header.site .wrap{ display:flex; justify-content:space-between; align-items:center; }
+  .wordmark-sm{
+    font-family:var(--serif); font-size:15px; letter-spacing:.06em;
+    text-decoration:none; color:var(--paper); font-weight:500;
+  }
+  .wordmark-sm span{ color:var(--gold); }
+  nav.links{ display:flex; gap:32px; font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; }
+  nav.links a{ text-decoration:none; color:var(--paper-dim); }
+  nav.links a:hover{ color:var(--gold); }
+
+  .sample-hero{ padding:80px 0 50px; text-align:center; border-bottom:1px solid var(--slate-line); }
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:.15em; text-transform:uppercase;
+    color:var(--gold-dim); margin-bottom:18px;
+  }
+  .sample-hero h1{
+    font-family:var(--serif); font-weight:400; font-size:clamp(28px,4vw,42px);
+    margin:0 0 14px;
+  }
+  .sample-hero h1 em{ font-style:italic; color:var(--gold); font-weight:400; }
+  .sample-hero p{ color:var(--paper-dim); max-width:56ch; margin:0 auto; }
+
+  .chapter-wrap{ max-width:640px; margin:0 auto; padding:70px 28px 40px; }
+  .chapter-label{
+    text-align:center; font-family:var(--mono); font-size:12px; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--fog); margin-bottom:6px;
+  }
+  .chapter-title{
+    text-align:center; font-family:var(--serif); font-style:italic; font-weight:400;
+    font-size:clamp(24px,3vw,32px); margin:0 0 50px; color:var(--paper);
+  }
+
+  .sample-epigraph{ text-align:center; margin:0 0 40px; }
+  .sample-epigraph-source{
+    font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--fog); margin:0 0 10px;
+  }
+  .sample-epigraph-quote{
+    font-family:var(--serif); font-style:italic; font-size:17px; color:var(--paper-dim);
+    max-width:44ch; margin:0 auto; line-height:1.55;
+  }
+  .sample-scene-break{
+    text-align:center; letter-spacing:.5em; color:var(--gold-dim); margin:0 0 40px; font-size:14px;
+  }
+
+  .chapter-wrap p{
+    font-family:var(--serif); font-size:18px; line-height:1.75; color:var(--paper);
+    margin:0 0 20px;
+  }
+
+  .sample-end{
+    max-width:640px; margin:20px auto 0; padding:50px 28px 100px;
+    text-align:center; border-top:1px solid var(--slate-line);
+  }
+  .sample-end .eyebrow{ margin-bottom:14px; }
+  .sample-end h2{
+    font-family:var(--serif); font-weight:400; font-size:clamp(24px,3vw,32px); margin:0 0 16px;
+  }
+  .sample-end h2 em{ font-style:italic; color:var(--gold); }
+  .sample-end p{ color:var(--paper-dim); max-width:48ch; margin:0 auto 32px; }
+  .btn{
+    display:inline-block; padding:15px 34px; border-radius:2px;
+    font-family:var(--mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+    text-decoration:none; transition:opacity .2s;
+  }
+  .btn-primary{ background:var(--gold); color:var(--ink); }
+  .btn-primary:hover{ opacity:.88; }
+
+  footer.site{
+    border-top:1px solid var(--slate-line); padding:40px 0;
+    font-family:var(--mono); font-size:11px; color:var(--fog); text-align:center;
+  }
+
+  @media (max-width:640px){
+    .chapter-wrap p{ font-size:17px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="wordmark-sm">DÉJÀ&nbsp;VÉCU <span>PUBLISHING</span></a>
+    <nav class="links">
+      <a href="index.html#book">Books</a>
+      <a href="index.html#author">Author</a>
+      <a href="index.html#follow">Follow</a>
+    </nav>
+  </div>
+</header>
+
+<section class="sample-hero">
+  <div class="wrap">
+    <div class="eyebrow">Read a Sample</div>
+    <h1>EMMA <em>Déjà Vécu</em></h1>
+    <p>The opening pages. No spoilers below this line — just where it begins.</p>
+  </div>
+</section>
+
+<div class="chapter-wrap">
+  <div class="chapter-label">Chapter One</div>
+  <div class="chapter-title">It's Happening Again</div>
+
+  <div class="sample-epigraph"><p class="sample-epigraph-source">Bennett Research Notes — Undated</p><p class="sample-epigraph-quote">&#8220;Memory rarely announces its failures. Sometimes it simply arrives too soon.&#8221;</p></div>
+          <p class="sample-scene-break">&#8226; &#8226; &#8226;</p>
+          <p>Emma woke before the alarm.</p>
+          <p>She always did.</p>
+          <p>Not every morning. Not enough to call it a habit. Just often enough to make the moment feel personal, like her body had received a message her mind was not allowed to read.</p>
+          <p>The room was still dark, but not completely. Queens had a way of refusing true darkness. Pale orange streetlight slipped between the blinds and striped the wall above her desk, cutting through the shadows in long, thin bars. Her textbooks sat stacked beside her laptop: Criminal Behavior, Abnormal Psychology, Introduction to Legal Studies. A yellow legal pad rested on top, the first page covered in small, careful handwriting.</p>
+          <p>Patterns are only strange until they repeat.</p>
+          <p>Emma stared at the ceiling.</p>
+          <p>Three.</p>
+          <p>Two.</p>
+          <p>One.</p>
+          <p>Her phone alarm screamed.</p>
+          <p>6:14 a.m.</p>
+          <p>She shut it off without looking.</p>
+          <p>For a few seconds, she did not move. She listened.</p>
+          <p>Radiator ticking.</p>
+          <p>Pipe knocking somewhere behind the wall.</p>
+          <p>A truck backing up outside.</p>
+          <p>A dog barking twice.</p>
+          <p>Then a man on the sidewalk below laughing too loudly into his phone.</p>
+          <p>Right on time.</p>
+          <p>Her throat tightened.</p>
+          <p>It's happening again.</p>
+          <p>She hated that phrase. Hated how dramatic it sounded. Hated how it arrived before thought, before logic, before she could remind herself that déjà vu was normal.</p>
+          <p>Everyone had it. The brain misfired. Memory mislabeled the present as the past.</p>
+          <p>That was all.</p>
+          <p>That was what Professor Bennett would say.</p>
+          <p>That was what Emma would say if this were happening to someone else.</p>
+          <p>She sat up slowly, careful not to disturb the air around her, as if moving too fast might lock the day into place.</p>
+          <p>Her room was small but organized with almost aggressive precision. Bed against the wall. Desk by the window. Laundry basket in the corner. One framed Michael Jackson poster above the dresser - black fedora, white socks, impossible lean. Her mother had bought it for her when Emma was twelve, after months of hearing Human Nature through the bedroom wall.</p>
+          <p>"You know he died before you were born, right?" Maya had said the first time she saw it.</p>
+          <p>Emma had shrugged.</p>
+          <p>"Some things are before time."</p>
+          <p>Maya had laughed.</p>
+          <p>Emma had meant it.</p>
+          <p>She swung her legs over the side of the bed.</p>
+          <p>Right foot first.</p>
+          <p>Then she froze.</p>
+          <p>No.</p>
+          <p>Left.</p>
+          <p>She put her left foot down instead.</p>
+          <p>A small change. Meaningless. Stupid.</p>
+          <p>But her breathing eased.</p>
+          <p>Tiny rebellions helped.</p>
+          <p>She padded across the cold floor to the kitchenette and reached for the chipped white mug near the sink. Halfway there, her fingers stopped.</p>
+          <p>The mug had a thin crack near the handle.</p>
+          <p>She knew that crack.</p>
+          <p>Not remembered. Knew.</p>
+          <p>She turned away and picked the blue mug instead.</p>
+          <p>Change the cup. Change the day.</p>
+          <p>Her subconscious said things like that sometimes. Not in a voice exactly. More like thought with weight. A thought that did not feel entirely hers.</p>
+          <p>The coffee machine coughed awake. She stood in front of it wearing an oversized St. John's sweatshirt and black sleep shorts, watching dark liquid drip into the mug.</p>
+          <p>Outside, morning gathered itself over the city. A siren wailed somewhere far away, then faded into traffic.</p>
+          <p>Her phone buzzed.</p>
+          <p>Maya: You up?</p>
+          <p>Emma typed: Unfortunately.</p>
+          <p>Maya: Don't be weird today.</p>
+          <p>Emma stared at the message.</p>
+          <p>Then another came through.</p>
+          <p>Maya: Actually be medium weird. I have court club later and need entertainment.</p>
+          <p>Emma smiled despite herself.</p>
+          <p>Maya Patel lived two floors below, though she treated Emma's apartment like an extension of her own. Pre-law. Loud. Brilliant. Chronically late. The kind of person who entered every room like she had been invited by destiny.</p>
+          <p>Emma envied that.</p>
+          <p>She took one sip of coffee.</p>
+          <p>Too hot.</p>
+          <p>She knew it would be.</p>
+          <p>Still burned her tongue.</p>
+          <p>"Idiot," she whispered.</p>
+          <p>Again.</p>
+          <p>The word crawled up her spine.</p>
+          <p>She set the mug down and moved it three inches to the left.</p>
+          <p>Nothing happened.</p>
+          <p>Of course nothing happened.</p>
+          <p>She showered, dressed, brushed her hair, and tied it back loosely. She chose dark jeans, white sneakers, a black fitted jacket, and a gray scarf because the forecast said rain even though the sky looked clear.</p>
+          <p>At the door, she paused.</p>
+          <p>Keys. Phone. Wallet. Student ID.</p>
+          <p>She checked the lock twice.</p>
+          <p>Then a third time.</p>
+          <p>Not because she was anxious.</p>
+          <p>Because yesterday - no, not yesterday.</p>
+          <p>Because once, somewhere, some version of this morning had ended with her standing outside without keys.</p>
+          <p>She closed her eyes.</p>
+          <p>"That didn't happen," she said.</p>
+          <p>The apartment gave no opinion.</p>
+          <p>Emma stepped into the hallway.</p>
+          <p>Mrs. Alvarez from 3B opened her door at the exact same time, holding a small trash bag and wearing pink slippers.</p>
+          <p>"Morning, sweetheart."</p>
+          <p>Emma smiled automatically.</p>
+          <p>"Morning. Elevator's slow today."</p>
+          <p>Mrs. Alvarez blinked.</p>
+</div>
+
+<div class="sample-end">
+  <div class="eyebrow">To Be Continued</div>
+  <h2>The elevator isn't the only thing running <em>early.</em></h2>
+  <p>Get notified the moment EMMA: Déjà Vécu is available, and find out what Mrs. Alvarez already knows.</p>
+  <a href="index.html#follow" class="btn btn-primary">Get Notified at Launch</a>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    DÉJÀ VÉCU PUBLISHING · Rogers Family &amp; Associates LLC · Houston, Texas
+  </div>
+</footer>
+
+</body>
+</html>
