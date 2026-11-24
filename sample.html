@@ -19,6 +19,10 @@
 <meta name="twitter:image" content="https://www.dejavecupublishing.com/assets/covers/emma-awakening.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0b0d12" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -117,6 +121,14 @@
   }
   .sample-end h2 em{ font-style:italic; color:var(--gold); }
   .sample-end p{ color:var(--paper-dim); max-width:48ch; margin:0 auto 32px; }
+  .sample-end-cover{ display:block; width:180px; margin:0 auto 36px; }
+  .sample-end-cover img{
+    width:100%; height:auto; display:block;
+    box-shadow:0 30px 60px -28px rgba(0,0,0,.85), 0 0 0 1px rgba(236,230,216,.08);
+    transition:transform .3s ease;
+  }
+  .sample-end-cover:hover img{ transform:translateY(-4px); }
+  @media (prefers-reduced-motion: reduce){ .sample-end-cover img{ transition:none; } }
   .btn{
     display:inline-block; padding:15px 34px; border-radius:2px;
     font-family:var(--mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
@@ -309,6 +321,9 @@
 </div>
 
 <div class="sample-end">
+  <a class="sample-end-cover" href="books/emma-awakening.html" aria-label="About EMMA: Awakening, Book I">
+    <img src="assets/covers/emma-awakening-sm.jpg" alt="Cover of EMMA: Awakening, Book I of the EMMA series by J.P. Rogers" width="400" height="536" loading="lazy" />
+  </a>
   <div class="eyebrow">End of Chapter One</div>
   <h2>Patterns are only strange until they <em>repeat.</em></h2>
   <p>Chapter Two continues in <em>EMMA: Awakening</em>, Book I of the EMMA series.</p>

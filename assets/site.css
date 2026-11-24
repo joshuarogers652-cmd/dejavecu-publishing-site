@@ -389,3 +389,7 @@
   details.spoiler summary span{ color:var(--fog); text-transform:none; letter-spacing:.02em; }
   details.spoiler summary:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
   details.spoiler[open] > p:first-of-type{ margin-top:18px; }
+
+  /* ---------- 404 ---------- */
+  .notfound{ min-height:70vh; display:flex; align-items:center; }
+  .notfound .lede{ margin-top:18px; }
