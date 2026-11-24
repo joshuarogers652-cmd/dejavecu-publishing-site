@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "route": "/PUBLISHING-CHECKLIST.md", "statusCode": 404 },
+    { "route": "/staticwebapp.config.json", "statusCode": 404 }
+  ]
+}

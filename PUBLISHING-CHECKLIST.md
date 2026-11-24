@@ -13,19 +13,19 @@
 3. At your domain registrar's DNS settings, add the CNAME record Azure provides, pointing your domain (or `www` subdomain) at the Azure default hostname.
 4. Wait for DNS propagation (up to ~24 hrs, usually much faster), then verify in Azure — SSL certificate is issued automatically.
 
-## 3. Email / Newsletter — Kit (formerly ConvertKit)
-1. Create a free account at kit.com (free up to 10,000 subscribers).
-2. Create a new "Landing Page & Forms" → Form (inline style to match the site's minimal look).
-3. Grab your Form ID from the embed/share code.
-4. In `index.html`, replace `REPLACE_WITH_YOUR_FORM_ID` in the newsletter `<form action="...">` with your real ID.
-5. Tag subscribers on signup (e.g. `book-2-notify`) so you can segment later.
+## 3. EMMA Series — Content Still Needed
+Every open slot on the book pages is marked in the HTML with a `<!-- PLACEHOLDER: ... -->` comment (search `books/*.html` for `PLACEHOLDER`).
 
-## 4. Content Still Needed From You
-- [ ] **Author bio** — more background, influences, what led you to write EMMA (current bio is a placeholder draft)
-- [ ] **Retailer links** — once EMMA is published, replace the "Coming Soon" badge in the Buy section with real Amazon/Audible/etc. buttons
-- [ ] **Pull quote** — the "I hope this story reminds you..." line is a placeholder; swap for a real quote if you have one
+- [ ] **Release dates**, Books I–IV
+- [ ] **ISBNs** (979-8-9969755 block), after Bowker verification. The ISBN rows are commented out until then.
+- [ ] **Retailer links**, Books I–IV
+- [ ] **Back-cover blurbs**, Books I–IV (approved copy only; no spoilers)
+- [x] **Book I cover** updated to the J.P. Rogers version
+- [ ] **Pull quote** in the author section ("I hope this story reminds you...") — confirm or replace
+- [ ] Later: *EMMA: The Complete Four-Book Collection* (paperback boxed set)
 
-## 5. Nice-to-Haves (Later)
-- Book cover reveal / preview chapter as lead magnet for the newsletter signup
-- Social share meta tags (Open Graph image) using the EMMA cover
-- Analytics (Azure has built-in, or add Plausible/GA4)
+## Notes
+- The site is informational only: links out to retailers, no cart or checkout.
+- No newsletter signup (removed in the series update).
+- This file is hidden from the public site by `staticwebapp.config.json`.
+- Always "series", never "trilogy". Byline is J.P. Rogers.
